@@ -106,7 +106,7 @@
     </div>
 
     <!-- header -->
-    <header id="header_new" class="header_new cate_open">
+    <header id="header_new" class="header_new">
       <div class="header_util_new">
         <div class="inner">
           <div class="util_menu">
@@ -278,7 +278,7 @@
 
             <ul class="for-mobile">
               <li><button type="button" class="btn-mo-srh"><span class="blind">search</span></button></li>
-              <li><button type="button" class="btn-mo-cate cate_close"><span class="blind">all categories</span></button></li>
+              <li><button type="button" class="btn-mo-cate"><span class="blind">all categories</span></button></li>
             </ul>
           </div><!-- //util_menu_icon -->
         </div>
@@ -326,7 +326,7 @@
                     </div>                    
                     <!-- 4depth -->
                     <ul class="cate_menu4">
-                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">1Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -343,19 +343,7 @@
                     </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
-                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
-                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
-                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <div class="menu-btns">
-                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
-                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
-                    </div>  
-                    <!-- 4depth -->
-                    <ul class="cate_menu4">
-                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">2Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
@@ -367,7 +355,7 @@
                     </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
-                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">3Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
@@ -379,7 +367,19 @@
                     </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
+                      <li><a href="#n4">4Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">5Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
@@ -1287,25 +1287,58 @@
     //Gnb
     var open_yn = false;
     $(document).ready(function() {
-        $(".btn-gnb-allcate").click(function() {
-            if (!open_yn && $('#header_new .category_list').css('display') == 'none') {
-                open_yn = true;
-                $("#header_new .category_list").stop().slideDown(400, 'easeInOutCubic');
-                $(".back").slideDown(400);
-                $(this).addClass("active");
-            } else {
-                open_yn = false;
-                $("#header_new .category_list").stop().slideUp(400, 'easeInOutCubic');
-                $(".back").slideUp(0);
-                $("#header_new .allcate button").removeClass("active");
-            }
+      $(".btn-gnb-allcate").click(function() {
+          if (!open_yn && $('#header_new .category_list').css('display') == 'none') {
+              open_yn = true;
+              $("#header_new .category_list").stop().slideDown(400, 'easeInOutCubic').addClass("for-pc");
+              $(".back").slideDown(400);
+              $(this).addClass("active");
+              $(".gnb-wrap li:first-child").addClass("active");
+          } else {
+              open_yn = false;
+              $("#header_new .category_list").stop().slideUp(400, 'easeInOutCubic');
+              $(".back").slideUp(0);
+              $("#header_new .allcate button").removeClass("active");
+          }
+          let gnbList = $(".gnb-wrap");
+          let btnMenu2 = gnbList.find("> li .menu-btns .btn-menu-open");
+          btnMenu2.click(function(){
+            $(this).parent().parent().addClass("active");
+            $(this).parent().parent().siblings().removeClass("active");
+          });
+      });
+      $("#header_new .allcate_close").click(function() {
+          open_yn = false;
+          $("#header_new .category_list").stop().slideUp(400, 'easeInOutCubic').removeClass("for-pc");
+          $(".gnb-wrap li").removeClass("active");
+      $(".back").slideUp(0);
+          $("#header_new .allcate button").removeClass("active");
+      });
+
+    
+
+      $(".btn-mo-cate").click(function(){
+        let thisClassCheck = $(this).attr("class");
+        if($(this).hasClass("cate_close")){
+          $(".header_new").removeClass("cate_open");
+          $(".gnb-wrap").removeClass("mobile-gnb");
+          $(this).removeClass("cate_close");
+          $('body').css("overflow","");
+        } else {
+          $(".header_new").addClass("cate_open");
+          $(".gnb-wrap").addClass("mobile-gnb");
+          $(this).addClass("cate_close");
+          $('body').css("overflow", "hidden")
+        }
+
+        let gnbList = $(".gnb-wrap");
+        let btnMenu2 = gnbList.find("> li .menu-btns .btn-menu-open");
+        btnMenu2.click(function(){
+          $(this).parent().parent().toggleClass("active");
+          $(this).parent().parent().siblings().removeClass("active");
         });
-        $("#header_new .allcate_close").click(function() {
-            open_yn = false;
-            $("#header_new .category_list").stop().slideUp(400, 'easeInOutCubic');
-        $(".back").slideUp(0);
-            $("#header_new .allcate button").removeClass("active");
-        });
+      });
+
     });
 
     document.addEventListener("DOMContentLoaded", function(){

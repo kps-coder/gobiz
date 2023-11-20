@@ -100,12 +100,13 @@
   .showcase_ai .prod-list {display: flex; gap:12px; overflow-x: auto; padding:0 24px 48px;}
   .showcase_ai .prod-box {width:240px;}
 
-  .banner_wrap {padding:10px 0; background-color: #fff;}
-  .banner_wrap > .inner {flex-direction: column; gap:10px;}
+  .banner_wrap {padding:40px 24px;}
 }
 
 @media screen and (max-width:600px) {
   .showcase_ai .prod-list::-webkit-scrollbar {display: none;}
+  .banner_wrap {padding:10px 0; background-color: #fff;}
+  .banner_wrap > .inner {flex-direction: column; gap:10px;}
 }
 
 /* 관심 상품 */

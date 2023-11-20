@@ -160,7 +160,7 @@
 
   .category_list {display: block; position: absolute; bottom:0; top:110px; right:0; left:0;}
   .category_list .inner_list {overflow-y:auto; height:100%;}
-  .category_list .cate_tit {position: sticky; top:0; padding:20px 0; border-bottom:10px solid #F1F0FA; text-align: center; color: #181b1f; font-size: 16px; font-weight: 300; overflow-y: auto; background-color: #fff;}
+  .category_list .cate_tit {position: sticky; top:0; z-index: 10; padding:20px 0; border-bottom:10px solid #F1F0FA; text-align: center; color: #181b1f; font-size: 16px; font-weight: 300; overflow-y: auto; background-color: #fff;}
   .gnb-wrap a {display: block; overflow: hidden; height:60px; line-height: 60px; padding:0 20px; border-bottom:1px solid #eff0f1; color: #3f4447; font-size: 15px; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; } 
   .gnb-wrap > li.active > .cate_menu3 {display: block;}
   .gnb-wrap > li.active > .cate_menu3 > li.active .cate_menu4 {display: block;}

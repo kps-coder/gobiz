@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7768ff;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="그룹_383559" data-name="그룹 383559" transform="translate(-1306 -172)">
+    <circle id="타원_24" data-name="타원 24" class="cls-1" cx="20" cy="20" r="20" transform="translate(1306 172)"/>
+    <path id="window-2-line" class="cls-2" d="M19.1,3A.954.954,0,0,1,20,4V20a.954.954,0,0,1-.9,1H2.9A.954.954,0,0,1,2,20V4a.954.954,0,0,1,.9-1Zm-.9,8H3.8v8H18.2Zm0-6H3.8V9H18.2Zm-.9,1V8H13.7V6Z" transform="translate(1315 180)"/>
+  </g>
+</svg>

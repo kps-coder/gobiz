@@ -62,7 +62,7 @@
 .favorite_list {display: flex; align-items: center; justify-content: center; gap: 20px; margin-top:6px;}
 .favorite_list a {color:#fff; opacity: 0.5;}
 
-.drop_open {position: absolute; z-index: 20; transform: translateX(-30%); display:none; margin-top:10px; padding:15px; border:1px solid #ccc; border-radius: 10px; background-color: #fff;}
+.drop_open {position: absolute; z-index: 20; left: 50%; transform: translateX(-50%); display:none; margin-top:10px; padding:15px; border:1px solid #ccc; border-radius: 10px; background-color: #fff;}
 .drop_open::-webkit-scrollbar {width: 5px;}
 .drop_open::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #ccc;}
 .drop_open::-webkit-scrollbar-button:vertical:start:decrement,
@@ -76,6 +76,7 @@
 }
 
 .util_menu_icon > ul {display: flex; gap:var(--gap-normal);}
+.util_menu_icon > ul li {position: relative;}
 [class^="btn-util-"] {display:block; width:32px; height:32px; border:0; cursor: pointer; background-color: transparent;}
 .btn-util-myp {background: url('../../images/2023/icon_util_mypage_b.svg') no-repeat center / 20px 21px;}
 .btn-util-msg {background: url('../../images/2023/icon_util_message_1.svg') no-repeat center / 22px 20px;}
@@ -153,11 +154,7 @@
   .btn-util-msg {background: url('../../images/2023/icon_util_message_mo.svg') no-repeat center top 10px / 28px 28px;}
   .btn-util-region {background: url('../../images/2023/icon_util_etrade_mo.svg') no-repeat center top 10px / 28px 28px;}
   .btn-util-lang {background: url('../../images/2023/icon_util_country_mo.svg') no-repeat center top 10px / 28px 28px;}
-
-  .btn-util-myp + .drop_open {left:10px; top:60px; transform: none;}
-  .btn-util-region + .drop_open {top:60px; transform: translateX(0);}
-  .btn-util-lang + .drop_open {top:60px; transform: none;} 
-  
+ 
 
   .category_list {display: none; position: absolute; bottom:0; top:110px; right:0; left:0;}
   .category_list .inner_list {overflow-y:auto; height:100%;}
@@ -192,7 +189,7 @@
 
 /* pc  */
 @media screen and (max-width: 1300px) {
-  .util_menu_icon > ul.for-pc li:last-child .drop_open {transform: none; right:0;}
+  /*.util_menu_icon > ul.for-pc li:last-child .drop_open {transform: none; right:0;} */
 }
 
 /* pc  */
@@ -218,6 +215,13 @@
   .util_menu > ul > li + li::before {background-color: #6045e6;}
   .util_menu.master li:last-child {display: none;}
 }
+
+/* 모바일 */
+@media screen and (max-width: 500px) {
+  .btn-util-myp + .drop_open {left:10px; top:60px; transform: none;}
+  .btn-util-lang + .drop_open {top:60px; transform: none; right:0; left:auto;} 
+}
+
 
 
 

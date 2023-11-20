@@ -90,6 +90,7 @@
 /* 모바일 */
 @media screen and (max-width:899px) {
   .sec_aiRecommends {padding:30px 0  20px;}
+  .sec_aiRecommends .inner {padding:0;}
   .sec_aiRecommends h2 {text-align: center; font-size: 22px;}
   .ai-block {display: block;}
   .title-ai {width:90%; max-width: 312px; height:223px; margin:0 auto 30px;}
@@ -104,8 +105,8 @@
 @media screen and (max-width:600px) {
   .showcase_ai .prod-list::-webkit-scrollbar {display: none;}
   .banner_wrap {padding:10px 0; background-color: #fff;}
-  .banner_wrap > .inner {flex-direction: column; gap:10px;}
-}
+  .banner_wrap > .inner {flex-direction: column; gap:10px; padding:0;}
+} 
 
 /* 관심 상품 */
 .sec_mainProd {padding:120px 0 80px; background:linear-gradient(#221957 0 41.8%, #F0F2F5 41.8% 100%);}

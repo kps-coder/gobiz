@@ -106,7 +106,7 @@
     </div>
 
     <!-- header -->
-    <header id="header_new" class="header_new">
+    <header id="header_new" class="header_new cate_open">
       <div class="header_util_new">
         <div class="inner">
           <div class="util_menu">
@@ -176,7 +176,7 @@
           <div class="util_menu_icon">
             <ul class="for-pc">
               <li>
-                <button type="button" class="btn-util-myp"><span class="blind">My Page</span></button>
+                <button type="button" class="btn-util-myp"><span class="hidden">My Page</span></button>
                 <!-- drop_open -->
                 <div class="drop_open"> 
                   <ul>
@@ -186,9 +186,9 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="#n" class="btn-util-msg"><span class="blind">Message</span></a></li>
+              <li><a href="#n" class="btn-util-msg"><span class="hidden">Message</span></a></li>
               <li>
-                <button type="button" class="btn-util-region"><span class="blind">Region</span></button>
+                <button type="button" class="btn-util-region"><span class="hidden">Region</span></button>
                 <!-- drop_open -->
                 <div class="drop_open">						
                   <ul>						
@@ -202,7 +202,7 @@
                 </div>
               </li>
               <li>
-                <button type="button" class="btn-util-lang"><span class="blind">Language</span></button>
+                <button type="button" class="btn-util-lang"><span class="hidden">Language</span></button>
                 <!-- drop_open -->
                 <div class="drop_open">
                   <ul class="for-pc">
@@ -278,7 +278,7 @@
 
             <ul class="for-mobile">
               <li><button type="button" class="btn-mo-srh"><span class="blind">search</span></button></li>
-              <li><button type="button" class="btn-mo-cate"><span class="blind">all categories</span></button></li>
+              <li><button type="button" class="btn-mo-cate cate_close"><span class="blind">all categories</span></button></li>
             </ul>
           </div><!-- //util_menu_icon -->
         </div>
@@ -305,19 +305,28 @@
           </div>
         </div>
 
-        <!-- category_list -->
+        <!-- category_list --><!-- 4뎁스까지 나오면서 구조 변경 -->
         <div class="category_list"> 
           <!-- inner_list -->
           <div class="inner_list" id="allCategory">
+            <h2 class="cate_tit">ALL CATEGORIES</h2>
             <ul class="gnb-wrap">
               <!-- 2depth -->
-              <li class="active"><a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li class="active"><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
                     <!-- 4depth -->
                     <ul class="cate_menu4">
-                      <li class="active"><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -327,7 +336,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -335,7 +348,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -343,7 +360,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -351,7 +372,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -363,10 +388,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -374,7 +424,35 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -386,10 +464,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -397,7 +500,35 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -409,10 +540,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -420,7 +576,35 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -432,10 +616,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -443,7 +652,35 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -455,10 +692,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -466,7 +728,35 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -478,10 +768,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -489,7 +804,35 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -501,10 +844,35 @@
               </li><!-- //2depth -->
 
               <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
+              <li>
+                <div class="menu-btns">
+                  <a href="#n" class="btn-menu2"><span>Health &amp; Beauty 마지막</span> <span class="number">49038</span></a>
+                  <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                </div>
                 <!-- 3depth -->
                 <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>                    
+                    <!-- 4depth -->
+                    <ul class="cate_menu4">
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                      <li><a href="#n4">Cure &amp; Vaccine</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -512,7 +880,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -520,14 +892,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                </ul>
-              </li><!-- //2depth -->
-
-              <!-- 2depth -->
-              <li><a href="#n2" class="btn-menu2"><span>Health &amp; Beauty</span> <span class="number">49038</span></a>
-                <!-- 3depth -->
-                <ul class="cate_menu3">
-                  <li><a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
@@ -535,7 +904,11 @@
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>
                     </ul>
                   </li>
-                  <li><a href="#n"><span>Beauty & Personal Care 36098</span> <span class="number">591</span></a>
+                  <li>
+                    <div class="menu-btns">
+                      <a href="#n3" class="btn-menu3"><span>Protective Items</span> <span class="number">591</span></a>
+                      <button class="btn-menu-open"><span class="blind">메뉴 열기</span></button>
+                    </div>  
                     <!-- 4depth -->
                     <ul class="cate_menu4">
                       <li><a href="#n4">Cure &amp; Vaccine</a></li>

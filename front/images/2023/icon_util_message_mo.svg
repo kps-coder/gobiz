@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="그룹_384214" data-name="그룹 384214" transform="translate(-4136 -178)">
+    <rect id="사각형_280984" data-name="사각형 280984" class="cls-1" width="56" height="56" transform="translate(4136 178)"/>
+    <path id="message-2-line" class="cls-2" d="M12.245,39.1,2,47V5.256A2.279,2.279,0,0,1,4.3,3H45.7A2.279,2.279,0,0,1,48,5.256v31.59A2.278,2.278,0,0,1,45.7,39.1ZM10.654,34.59H43.4V7.513H6.6v30.2ZM22.7,18.795h4.6v4.513H22.7Zm-9.2,0h4.6v4.513H13.5Zm18.4,0h4.6v4.513H31.9Z" transform="translate(4139 181)"/>
+  </g>
+</svg>

@@ -165,7 +165,7 @@
 .footer-wrap.style-new .footer_top {position: relative; margin: 0 auto; padding:15px 0; max-width: var(--max-width);}
 .footer-wrap.style-new .slick-control button {display: inline-block; width:40px; height:40px; border: 0; cursor: pointer; background-color: transparent;}
 .footer-wrap.style-new .site_list {max-width: var(--max-width); margin: 0 auto; padding:0 50px;}
-.footer-wrap.style-new .slick-slide {margin:0 10px;}
+.footer-wrap.style-new .footer_top .slick-initialized .slick-slide {margin:0 10px; margin-right:10px;}
 .footer-wrap.style-new .slick-slide img {width:100%; max-width: 200px; margin:0 5px;}
 .footer-wrap.style-new .footer_top .slick-control {position: static; transform: none;}
 .footer-wrap.style-new .slick-control .slick-pause,

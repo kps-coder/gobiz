@@ -67,7 +67,7 @@
 
 /* ai */
 .sec_aiRecommends {padding:53px 0 80px;}
-.sec_aiRecommends .inner {max-width: var(--max-width); margin:0 auto;}
+.sec_aiRecommends .inner {max-width: var(--max-width); margin:0 auto; padding:0 24px;}
 .sec_aiRecommends h2 {text-align: left; font-size: 38px;}
 .sec_aiRecommends .sub_tit {margin-bottom:16px; font-size:16px; color:#0ad4d4; text-align: center; }
 .title-ai {position: relative; overflow: hidden; flex:1; min-width: 260px;}
@@ -78,7 +78,7 @@
 .showcase_ai .prod-box {width:100%; max-width:240px;}
 
 .banner_wrap {padding:40px 0;}
-.banner_wrap > .inner {display: flex; gap:20px; justify-content: space-between; max-width: var(--max-width); margin:0 auto;}
+.banner_wrap > .inner {display: flex; gap:20px; justify-content: space-between; max-width: var(--max-width); margin:0 auto;  padding:0 24px;}
 .banner_wrap > .inner img {width:100%;}
 
 /* Pc */
@@ -99,8 +99,6 @@
   .title-ai .img img {width:100%;}
   .showcase_ai .prod-list {display: flex; gap:12px; overflow-x: auto; padding:0 24px 48px;}
   .showcase_ai .prod-box {width:240px;}
-
-  .banner_wrap {padding:40px 24px;}
 }
 
 @media screen and (max-width:600px) {
@@ -111,7 +109,7 @@
 
 /* 관심 상품 */
 .sec_mainProd {padding:120px 0 80px; background:linear-gradient(#221957 0 41.8%, #F0F2F5 41.8% 100%);}
-.sec_mainProd .inner {display: flex; gap:40px; max-width: var(--max-width); margin:0 auto;}
+.sec_mainProd .inner {display: flex; gap:40px; max-width: var(--max-width); margin:0 auto; padding:0 24px;}
 .sec_mainProd .inner > * {flex:1;}
 .sec_mainProd .prod_head {height:300px; margin-bottom:-117px; padding:46px 40px 0; box-sizing: border-box; background-repeat: no-repeat; background-size: auto 300px;}
 .sec_mainProd .prod_head .tit_desc_sm {text-align: center; font-size:14px;}
@@ -123,9 +121,9 @@
 .main-service-area {background-repeat: no-repeat; background-size: auto 300px;}
 
 /* 모바일 */
-@media screen and (max-width:899px) {
+@media screen and (max-width:600px) {
   .sec_mainProd {padding:0;}
-  .sec_mainProd .inner {display: block;}
+  .sec_mainProd .inner {display: block; padding:0;}
   .sec_mainProd .prod_head {height:150px; margin-bottom:-70px; padding:24px 50px 0; background-size: 100% auto;}
   .sec_mainProd .title-area {position: absolute; top:40px; left: 0; right:0;}
   .sec_mainProd .prod_head .tit_desc {margin-top:10px; padding:0 60px; line-height: 1.2; font-size:16px;}

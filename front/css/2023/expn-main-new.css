@@ -8,7 +8,7 @@
 .tit_desc_sm {margin-top:4px; font-size: var(--text-small); color:#fff; word-break: keep-all;}
 .title-area > h2 + .tit_desc {margin-top:20px;}
 
-.icon_logo {display: inline-block; width:204px; height:42px; vertical-align: middle; background: url(../../images/2023/img_logo.svg) no-repeat center / 100% auto;}
+.icon_logo {display: inline-block; width:204px; height:42px; vertical-align: middle; background: url(../../images/2023/img_logo.png) no-repeat center / 100% auto;}
 
 @media screen and (max-width:899px) {
   .title-area {margin-bottom:20px;}
@@ -19,8 +19,8 @@
 .prod-list::-webkit-scrollbar {width: 5px; height:6px;  border-radius: 5px; opacity: 0.5; background-color: #fff;}
 .prod-list::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #39298A; }
 
-.prod-box {display:block; position:relative; width: 100%; height:100%; aspect-ratio: 1 / 1; background-color: #fff;}
-.prod-box .prod_img {display: block; background-color: #fff;} 
+.prod-box {display:block; position:relative; width: 100%; height:100%;}
+.prod-box .prod_img {display: block;  aspect-ratio: 1 / 1;  background-color: #fff;} 
 .prod-box .prod_img img {width:100%;}
 .prod-box .prod_title {display: block; position:absolute; bottom:0; left:0; right:0; padding:12px 8px; background-color: rgba(4, 4, 4, 0.3);}
 .prod-box .prod_title > em {display:block; overflow: hidden; width:100%; height:40px; text-overflow: ellipsis; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color:#fff; font-size: 14px; font-style: normal;}

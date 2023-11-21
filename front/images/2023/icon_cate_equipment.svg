@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #4a36b3;
+      }
+
+      .cls-2 {
+        fill: #f7f7f7;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #4a36b3;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_280903" data-name="사각형 280903" class="cls-1" width="38" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_384063" data-name="그룹 384063" transform="translate(651 -3021)">
+    <circle id="타원_32" data-name="타원 32" class="cls-2" cx="40" cy="40" r="40" transform="translate(-651 3021)"/>
+    <g id="그룹_384034" data-name="그룹 384034" transform="translate(-629 3042.595)">
+      <g id="그룹_384033" data-name="그룹 384033" class="cls-3" transform="translate(-1 -0.595)">
+        <path id="선_12" data-name="선 12" class="cls-4" d="M3.434,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.434a1,1,0,0,1,1,1A1,1,0,0,1,3.434,1Z" transform="translate(1.635 8.864)"/>
+        <path id="선_13" data-name="선 13" class="cls-4" d="M3.434,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.434a1,1,0,0,1,1,1A1,1,0,0,1,3.434,1Z" transform="translate(1.635 15.486)"/>
+        <path id="선_14" data-name="선 14" class="cls-4" d="M3.434,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.434a1,1,0,0,1,1,1A1,1,0,0,1,3.434,1Z" transform="translate(1.635 22.109)"/>
+        <path id="선_15" data-name="선 15" class="cls-4" d="M3.434,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.434a1,1,0,0,1,1,1A1,1,0,0,1,3.434,1Z" transform="translate(1.635 28.731)"/>
+        <path id="선_16" data-name="선 16" class="cls-4" d="M3.433,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.433a1,1,0,0,1,1,1A1,1,0,0,1,3.433,1Z" transform="translate(32.675 8.864)"/>
+        <path id="선_17" data-name="선 17" class="cls-4" d="M3.433,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.433a1,1,0,0,1,1,1A1,1,0,0,1,3.433,1Z" transform="translate(32.675 15.486)"/>
+        <path id="선_18" data-name="선 18" class="cls-4" d="M3.433,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.433a1,1,0,0,1,1,1A1,1,0,0,1,3.433,1Z" transform="translate(32.675 22.109)"/>
+        <path id="선_19" data-name="선 19" class="cls-4" d="M3.433,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H3.433a1,1,0,0,1,1,1A1,1,0,0,1,3.433,1Z" transform="translate(32.675 28.731)"/>
+        <path id="선_20" data-name="선 20" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(9.145 32.894)"/>
+        <path id="선_21" data-name="선 21" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(15.63 32.894)"/>
+        <path id="선_22" data-name="선 22" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(22.114 32.894)"/>
+        <path id="선_23" data-name="선 23" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(28.598 32.894)"/>
+        <path id="선_24" data-name="선 24" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(9.145 1.194)"/>
+        <path id="선_25" data-name="선 25" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(15.63 1.194)"/>
+        <path id="선_26" data-name="선 26" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(22.114 1.194)"/>
+        <path id="선_27" data-name="선 27" class="cls-4" d="M0,4.507a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V3.507A1,1,0,0,1,0,4.507Z" transform="translate(28.598 1.194)"/>
+        <path id="사각형_280901" data-name="사각형 280901" class="cls-4" d="M1-1H26.459a2,2,0,0,1,2,2V27.044a2,2,0,0,1-2,2H1a2,2,0,0,1-2-2V1A2,2,0,0,1,1-1ZM26.459,27.044V1H1V27.044Z" transform="translate(5.069 4.775)"/>
+        <path id="사각형_280902" data-name="사각형 280902" class="cls-4" d="M1-1H12.181a2,2,0,0,1,2,2V12.461a2,2,0,0,1-2,2H1a2,2,0,0,1-2-2V1A2,2,0,0,1,1-1ZM12.181,12.461V1H1V12.461Z" transform="translate(12.208 12.067)"/>
+      </g>
+    </g>
+  </g>
+</svg>

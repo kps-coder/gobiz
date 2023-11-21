@@ -8,7 +8,7 @@
   --max-width: 1280px;
 
   /* font */
-  --h2-size: 28px;
+  --h2-size: 38px;
   --text-large : 32px;
   --text-normal : 16px;
   --text-small : 14px;
@@ -22,7 +22,7 @@
 @media screen and (max-width: 899px) { 
   :root {
     /* font */
-    --h2-size: 28px;
+    --h2-size: 22px;
     --text-large : 16px;
     --text-normal : 14px;
     --text-small : 12px;
@@ -137,7 +137,6 @@
   /* GNB mobile*/
   .cate_open {position: fixed; z-index:999; top:0; bottom:0; right:0; left:0; width:100%; background-color: #fff;}
   .cate_open .header_util_new .inner {justify-content: flex-start;}
-  .cate_open .header_util_new .util_menu.master {padding-left:24px;}
   .cate_open .header_util_new .util_menu.master li:first-child {display: none;}
   .cate_open .header_util_new .util_menu.master li::before {display: none;}
   .cate_open .util_menu_icon > ul.for-pc {position: absolute; left:0; right:0; top:0; bottom:0; display: flex; background-color:#4A36B3;}

@@ -87,7 +87,7 @@
 
 /* Pc */
 @media screen and (min-width:900px) {
-  .ai-block {display: flex; gap:20px; flex-direction: row-reverse; justify-content: space-between; padding:20px; border: 20px solid #3a087b; background: #4a36b3 url(../../images/2023/img_ai.png) no-repeat right -100px bottom / 750px auto ;}
+  .ai-block {display: flex; gap:20px; flex-direction: row-reverse; justify-content: space-between; padding:20px; border: 20px solid #3a087b; background: #4A36B3 url(../../images/2023/img_ai.png) no-repeat right -100px bottom / 750px auto ;}
   .title-ai .img {display: none;}
 }
 

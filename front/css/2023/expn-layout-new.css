@@ -48,7 +48,7 @@
 .util_menu > ul > li > a {font-size:12px; color: #a8adb3;}
 
 .header_sch_new > .inner {position: relative; display: flex; align-items: center; justify-content: space-between; max-width:var(--max-width); height:112px; margin: 0 auto; padding:0 24px;}
-.header_sch_new .btn-logo {display:block; width:247px; height:52px; background: url(../../images/2023/logo.png) no-repeat center / 100% auto;}
+.header_sch_new .btn-logo {display:block; width:226px; height:46px; background: url(../../images/2023/logo.png) no-repeat center / 100% auto;}
 
 .sch_form_new {position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
 .total_sch_area {position: relative; display: flex; align-items: center; width:500px; border: 1px solid #dce1e6; border-radius: 40px; background-color: #fff;}

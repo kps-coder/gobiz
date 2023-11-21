@@ -98,7 +98,7 @@
   .sec_aiRecommends h2 {text-align: center; font-size: 22px;}
   .ai-block {display: block;}
   .title-ai {width:90%; max-width: 312px; height:223px; margin:0 auto 30px;}
-  .ai-visual {border: 10px solid #3a087b;}
+  .ai-visual {border: 10px solid #3a087b; background-color: #4A36B3;}
   .ai-visual .tit {padding-top:32px;}
   .ai-visual .tit .icon_logo {width:90px; height:19px; margin-bottom:8px;}
   .title-ai .img {position: absolute; width:100%; left:50%; bottom:0; transform: translate(-50%);}

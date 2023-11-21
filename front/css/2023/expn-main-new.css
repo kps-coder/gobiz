@@ -8,6 +8,8 @@
 .tit_desc_sm {margin-top:4px; font-size: var(--text-small); color:#fff; word-break: keep-all;}
 .title-area > h2 + .tit_desc {margin-top:20px;}
 
+.icon_logo {display: inline-block; width:204px; height:42px; vertical-align: middle; background: url(../../images/2023/img_logo.svg) no-repeat center / 100% auto;}
+
 @media screen and (max-width:899px) {
   .title-area {margin-bottom:20px;}
 }
@@ -73,6 +75,7 @@
 .title-ai {position: relative; overflow: hidden; flex:1; min-width: 260px;}
 .ai-visual {position: relative; width: 100%; height:100%;  box-sizing: border-box;}
 .ai-visual .tit {position: relative; z-index: 10; padding-top:78px; color:#fff; font-size: var(--text-large); font-weight: 300; line-height: 1.3; text-align: center;}
+.ai-visual .tit .icon_logo {margin-bottom:20px;}
 
 .showcase_ai .prod-list {display: grid; grid-template-columns: 1fr 1fr 1fr; gap:20px;}
 .showcase_ai .prod-box {width:100%; max-width:240px;}
@@ -96,6 +99,7 @@
   .title-ai {width:90%; max-width: 312px; height:223px; margin:0 auto 30px;}
   .ai-visual {border: 10px solid #3a087b;}
   .ai-visual .tit {padding-top:32px;}
+  .ai-visual .tit .icon_logo {width:90px; height:19px; margin-bottom:8px;}
   .title-ai .img {position: absolute; width:100%; left:50%; bottom:0; transform: translate(-50%);}
   .title-ai .img img {width:100%;}
   .showcase_ai .prod-list {display: flex; gap:12px; overflow-x: auto; padding:0 24px 48px;}

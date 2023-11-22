@@ -8,6 +8,11 @@
 .tit_desc_sm {margin-top:4px; font-size: var(--text-small); color:#fff; word-break: keep-all;}
 .title-area > h2 + .tit_desc {margin-top:12px;}
 
+@media screen and (max-width:899px) {
+  .title-area {margin-bottom:20px;}
+}
+
+/* 아이콘 */
 .icon_logo {display: inline-block; width:204px; height:42px; vertical-align: middle; background: url(../../images/2023/img_logo.png) no-repeat center / 100% auto;}
 
 [class^="icon_cate_"] {display: inline-block; width:80px; height:80px; vertical-align: middle;}
@@ -26,6 +31,7 @@
 .icon_cate_package {background: url('../../images/2023/icon_cate_package.svg') no-repeat center / 100% 100%;}
 .icon_cate_chemicals {background: url('../../images/2023/icon_cate_chemicals.svg') no-repeat center / 100% 100%;}
 
+/* 체크박스 */
 .inp-check {position: relative; display: inline-block; vertical-align: middle;}
 .inp-check input[type="checkbox"] {position: absolute; left:0; opacity: 0; margin:0; }
 .inp-check label {display: flex; color: #6f757a; }
@@ -33,35 +39,65 @@
 .inp-check input[type="checkbox"]:focus + label::before {outline: auto;}
 .inp-check input[type="checkbox"]:checked + label::before {background-position: left bottom;}
 
-@media screen and (max-width:899px) {
-  .title-area {margin-bottom:20px;}
-}
 
+/* 상품 박스 ----------------------------*/
 .prod-list {display:flex; justify-content: space-between;}
 .prod-list > li {position: relative;}
 .prod-list::-webkit-scrollbar {width: 5px; height:6px;  border-radius: 5px; opacity: 0.5; background-color: #fff;}
 .prod-list::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #39298A; }
 
-/* 상품 박스 - ai */
-.prod-box {display:block; position:relative; width: 100%; height:100%;}
-.prod-box .prod_img {display: block;  aspect-ratio: 1 / 1;  background-color: #fff;} 
-.prod-box .prod_img img {width:100%;}
-.prod-box .prod_title {display: block; position:absolute; bottom:0; left:0; right:0; padding:12px 8px; background-color: rgba(4, 4, 4, 0.3);}
-.prod-box .prod_title > em {display:block; overflow: hidden; width:100%; height:40px; text-overflow: ellipsis; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color:#fff; font-size: 14px; font-style: normal; line-height: 20px;}
-.prod-box .prod_title > em.tit {height:20px; margin-bottom:12px; white-space: nowrap; color: #fff;}
-.quick_view {display: none; position: absolute; right:16px; top:16px; }
+[class^="prod-box"] {position:relative; width: 100%; height:100%; overflow: hidden;}
+[class^="prod-box"] .prod_img {display: block; background-color: #fff;}
+[class^="prod-box"] .prod_img img {width:100%;}
+[class^="prod-box"] .prod_title {display: block; overflow: hidden;}
+[class^="prod-box"] .prod_title > em {display:block; overflow: hidden; width:100%; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 14px; font-style: normal; line-height: 20px; font-size: 14px; font-style: normal; line-height: 20px;}
+[class^="prod-box"] .prod_title > em.tit {height:20px; margin-bottom:12px; white-space: nowrap;}
+
+.quick_view {display: none; position: absolute; }
 .quick_view > a {display: flex; align-items: center; width:50px; height:50px; border-radius: 100%; text-align: center; line-height: 1.2; background-color:#4a36b3;color:#fff;}
 .prod-list > li:hover .quick_view {display:block}
 
+.btn-video {display: inline-block; width:60px; height:60px; border:0; background: transparent url(../../images/2023/icon_video.svg) no-repeat 0 top / 100% auto;}
+.btn-video:hover {background-position: 0 bottom;}
+
+/* 상품 박스 - ai */
+.prod-box {display:block;}
+.prod-box .prod_img { aspect-ratio: 1 / 1;} 
+.prod-box .prod_title { position:absolute; bottom:0; left:0; right:0; padding:12px 8px; background-color: rgba(4, 4, 4, 0.3);}
+.prod-box .prod_title > em {height:40px; color:#fff;}
+.prod-box .prod_title > em.tit {color: #fff;}
+.prod-box + .quick_view {right:16px; top:16px;}
+
 /* 상품 박스 - interested */
-.prod-box-sm {display:flex; gap:16px;  position:relative; width: 100%; height:100%;}
-.prod-box-sm .prod_img {display: block; border:2px solid transparent;  aspect-ratio: 1 / 1; box-sizing: border-box; background-color: #fff;} 
-.prod-box-sm .prod_img img {width:100%;}
-.prod-box-sm .prod_title {display: block; overflow: hidden;}
-.prod-box-sm .prod_title > em {display:block; overflow: hidden; width:100%; height:60px; text-overflow: ellipsis; word-wrap: break-word; -webkit-line-clamp: 3; -webkit-box-orient: vertical; color: #6f757a; font-size: 14px; font-style: normal;}
-.prod-box-sm .prod_title > em.tit {height:20px; margin-bottom:12px; white-space: nowrap; color: #3f4447;}
-.prod-box-sm + .quick_view {right:auto; top:50%; transform: translateY(-50%); left:40px;}    
-.prod-list > li:hover .prod-box-sm .prod_img {border: 2px solid #4a36b3; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);}           
+.prod-box-sm {display:flex; gap:16px;}
+.prod-box-sm .prod_img {border:2px solid transparent;  aspect-ratio: 1 / 1; box-sizing: border-box;} 
+.prod-box-sm .prod_title > em {height:60px; -webkit-line-clamp: 3; color: #6f757a;}
+.prod-box-sm .prod_title > em.tit {color: #3f4447;}
+.prod-box-sm + .quick_view {top:50%; transform: translateY(-50%); left:40px;}    
+.prod-list > li:hover .prod-box-sm .prod_img {border: 2px solid #4a36b3; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);} 
+
+/* 상품 박스 - video */
+.prod-box-video {display:block;}
+.prod-box-video .prod_img {position: relative; width:100%; height:100%;} 
+.prod-box-video .prod_img::after {content:""; position: absolute; top:0; right:0; bottom:0; left:0; display: block; background-color: rgba(4, 4, 4, 0.3);}
+.prod-box-video .prod_title {display:none; position:absolute; bottom:0; left:0; right:0; padding:16px 12px;}
+.prod-box-video .prod_title > em {height:40px; color:#fff;}
+.prod-box-video .prod_title > em.tit {color: #fff;}
+.prod-box-video .btn-video,
+.prod-box-video + .btn-video {position: absolute; z-index: 5; top:50%; left:50%; transform: translate(-50%, -50%);}
+.prod-list > li:hover .prod-box-video .prod_title {display: block;}
+.prod-list > li:hover .btn-video {background-position: 0 bottom;}
+
+
+/* 모바일 */
+@media screen and (max-width:600px) {
+  .prod-list > li:hover .quick_view {display: none;}
+  .btn-video {width:30px; height:30px;}
+  .prod-box-video .prod_title {padding:8px;}
+}
+
+
+/* 상단 메인 영역 ---------------------------------------*/
 
 .main_visual_wrap {transition: background-color 1s;}
 
@@ -221,4 +257,29 @@
   .sec_catagory .showcase .prod-box-sm .prod_title > em.tit {margin-bottom:8px}
   .sec_catagory .showcase .prod-list .quick_view {display: none;}
   .sec_catagory .showcase .btn-more {position: static; margin-top:19px;}
+}
+
+/* video ---------------------------*/
+.sec_prod_video {padding-left:0; padding-right: 0; background-color: var(--main-color);}
+.sec_prod_video .inner {max-width: var(--max-width); margin:0 auto;}
+.sec_prod_video .title-area h2 {color:#fff;}
+
+.sec_prod_video .showcase {padding:0 24px; overflow-x:auto;}
+.sec_prod_video .showcase::-webkit-scrollbar {width: 5px; height:6px;  border-radius: 5px; opacity: 0.5; background-color: #fff;}
+.sec_prod_video .showcase::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #39298A; }
+.sec_prod_video .showcase .prod-list {display: block; overflow: hidden; min-width:640px; padding-bottom:35px;}
+.sec_prod_video .showcase .prod-list li {float: left;}
+.sec_prod_video .showcase .prod-list li:nth-child(1) {width:32%; aspect-ratio: 41 / 64;}
+.sec_prod_video .showcase .prod-list li:nth-child(1) img {position: relative; left:50%; width:auto; height:100%; transform: translateX(-50%);}
+.sec_prod_video .showcase .prod-list li:nth-child(2),
+.sec_prod_video .showcase .prod-list li:nth-child(5) {width:24.21875%; max-width: 310px; aspect-ratio: 1 / 1;}
+.sec_prod_video .showcase .prod-list li:nth-child(3),
+.sec_prod_video .showcase .prod-list li:nth-child(4) {width:40.625%; aspect-ratio: 52 / 31;}
+.sec_prod_video .showcase .prod-list li:nth-child(3) img,
+.sec_prod_video .showcase .prod-list li:nth-child(4) img {position: relative; top:50%; width:100%; height:auto; transform: translateY(-50%);}
+.sec_prod_video .showcase .prod-list li:nth-child(n+2) {margin-left:1.5625%;}
+.sec_prod_video .showcase .prod-list li:nth-child(n+4) {margin-top:1.5625%;}
+
+@media screen and (max-width:500px) {
+  .sec_prod_video .showcase::-webkit-scrollbar {display: none;}
 }

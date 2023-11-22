@@ -264,7 +264,7 @@
 /* video ---------------------------*/
 .sec_prod_video {padding-left:0; padding-right: 0; background-color: var(--main-color);}
 .sec_prod_video .inner {max-width: var(--max-width); margin:0 auto;}
-.sec_prod_video .title-area h2 {color:#fff;}
+.sec_prod_video .title-area h2 {padding:0 24px; color:#fff;}
 
 .sec_prod_video .showcase {padding:0 24px; overflow-x:auto;}
 .sec_prod_video .showcase::-webkit-scrollbar {width: 5px; height:6px;  border-radius: 5px; opacity: 0.5; background-color: #fff;}
@@ -297,6 +297,7 @@
 
 .sec_prod_world {padding-left:0; padding-right:0;}
 .sec_prod_world .inner {max-width: var(--max-width); margin:0 auto;}
+.sec_prod_world .title-area {padding:0 24px;}
 .world_visual {display: none; margin-bottom:20px;}
 .img-world {display:block; max-width:872px; margin:0 auto;}
 .sec_prod_world .showcase {padding:0 24px}

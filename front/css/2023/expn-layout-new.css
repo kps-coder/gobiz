@@ -243,8 +243,8 @@
 
 
 .foot_cont_new {padding:50px 0 140px;}
-.foot_cont_new .notitxt {margin-top:56px; color:#888e94; font-size:11px; line-height: 15px;}
-.foot_cont_new .copyright {margin-top:20px; color:#888e94; font-size:11px;}
+.foot_cont_new .notitxt {margin-top:56px; color:#888e94; font-size:var(--text-smal); line-height: 15px;}
+.foot_cont_new .copyright {margin-top:20px; color:#888e94; font-size:var(--text-smal);}
 
 
 .sns_w_new {position: absolute; bottom:50px; right:24px; width:fit-content; display:flex; justify-content: flex-end;}
@@ -280,7 +280,7 @@
   .foot_util_new .menu_list {display: flex; align-items: center; gap:56px; height:64px; }
   .foot_util_new .menu_list > li {position: relative;}
   .foot_util_new .menu_list > li + li::before {content: ""; position: absolute; top:7px; left:-25px; display:block; width:2px; height:10px; background-color: #33373a;}
-  .foot_util_new .menu_list a {color:#c5cacf; font-size: 12px;}
+  .foot_util_new .menu_list a {color:#c5cacf; font-size: 14px;}
 }
 
 /* 모바일 */

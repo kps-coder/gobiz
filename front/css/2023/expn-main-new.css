@@ -3,7 +3,7 @@
 .container_new * {font-family:'roboto','opensans','Malgun Gothic','맑은 고딕','Helvetica nenu',Arial, "Apple SD Gothic";}
 
 .title-area {margin-bottom:28px; text-align: center;}
-.title-area > h2 { font-size: var(--h2-size); color: #3f4447; line-height: 1.4; font-weight: 300;} 
+.title-area > h2 { font-size: var(--h2-size); color: #3f4447; line-height: 38px; font-weight: 300;} 
 .tit_desc {font-size: 20px; color:#fff; font-weight: 300; word-break: keep-all;}
 .tit_desc_sm {margin-top:4px; font-size: var(--text-small); color:#fff; word-break: keep-all;}
 .title-area > h2 + .tit_desc {margin-top:12px;}
@@ -151,7 +151,7 @@
 }
 
 /* ai --------------------- */
-.sec_aiRecommends {padding:53px 0 80px;}
+.sec_aiRecommends {padding:40px 0 0;}
 .sec_aiRecommends .inner {max-width: var(--max-width); margin:0 auto; padding:0 24px;}
 .sec_aiRecommends h2 {text-align: left; color:#fff;}
 .sec_aiRecommends .sub_tit {margin-bottom:16px; font-size:16px; color:#0ad4d4; text-align: center; }
@@ -163,7 +163,7 @@
 .showcase_ai .prod-list {display: grid; grid-template-columns: 1fr 1fr 1fr; gap:8px;}
 .showcase_ai .prod-box {width:100%; max-width:260px;}
 
-.banner_wrap {padding:40px 0;}
+.banner_wrap {padding:60px 0;}
 .banner_wrap > .inner {display: flex; gap:20px; justify-content: space-between; max-width: var(--max-width); margin:0 auto;  padding:0 24px;}
 .banner_wrap > .inner img {width:100%;}
 
@@ -245,7 +245,7 @@
 /* 관심 상품 -------------------- */
 .sec_prod_interested > .inner {max-width: var(--max-width); margin:0 auto;}
 
-.choice-wrap {position: relative; display: flex; justify-content: center; }
+.choice-wrap {position: relative; display: flex; justify-content: center; margin-bottom:42px;}
 .btn-choice {display: inline-block; height:37px; padding:0 40px 0 16px; border: 1px solid #dce1e6; border-radius: 18.5px; text-align: left; color: #5a5f63; cursor: pointer; background: #fff url('../../images/2023/icon_search_combo.svg') no-repeat right 16px center / 16px 16px;}
 .btn-choice.on {background-image: url('../../images/2023/icon_combo_close.svg');}
 .choice-layer {display:none; position: absolute; top:50px; z-index:10; width:100%; max-width:400px; padding:24px; box-sizing: border-box; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); background-color: #fff;}

@@ -927,6 +927,171 @@
       </div>
     </header><!-- //header -->
 
+    <!-- search_real - layer -->
+    <div id="search_real" class="layer_wrap" style="display:block; z-index:1000000">
+      <!-- search_real_layer -->
+      <div class="search_real_layer">
+        <!-- search_real_header -->
+        <div class="search_real_header">
+          <!-- form_area -->
+          <div class="form_area">
+            <!-- form -->
+            <form id="searchFrm" name="searchFrm" method="post" action="/mobile/search/search.do" placeholder="What are you looking for ...">
+              <!-- fieldset -->
+              <fieldset>
+                <legend>Search for Korean product</legend>
+                <!-- sch_inp -->
+                <input type="text" class="sch_inp" title="" name="sqt" value="" id="searchKey" placeholder="">
+
+                <label for="searchKey" class="blind">Search for Korean product</label>
+
+                <!-- sch_btn -->
+                <div class="keydel_btn">
+                  <button type="button" class="btn_keydel"><span class="blind">Keyword Delete</span></button>
+                </div>
+
+                <!-- sch_btn -->
+                <div class="sch_btn">
+                  <button type="button" class="btn_search"><span class="blind">Search</span></button>
+                </div>
+                
+              </fieldset>
+              <!-- //fieldset -->
+            </form>
+            <!-- //form -->
+          </div>
+          <!-- //form_area -->
+
+          <!-- //pop_close -->
+          <a href="javascript:;" class="pop_close close">
+            <span class="blind">Close</span>
+          </a>
+        </div>
+        <!-- //search_real_header -->
+
+        <!-- search_real_cont -->
+        <div class="search_real_cont">
+          <!-- search_default / 검색어 입력하면 none -->
+          <div class="search_default" style="display:block;">
+            <!-- search_history -->
+            <div class="search_history">
+              <!-- tit_area -->
+              <div class="tit_area">
+                <strong class="tit">Search history</strong>
+              </div>
+
+              <!-- history_list -->
+              <ul class="history_list">
+                <li><a href="#none;">There are no recent searches.</a></li>
+                <li>
+                  <div class="inner">
+                    <a href="#n">mask</a>
+                    <div class="delete_row">
+                      <button type="button" class="btn_delete"><span class="blind">Delete</span></button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inner">
+                    <a href="#n">Marine Bioprocess</a>
+                    <div class="delete_row">
+                      <button type="button" class="btn_delete"><span class="blind">Delete</span></button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- btnarea_center -->
+              <div class="btnarea_center">
+                <a href="#n" class="btn_white spider history_del"><span>Clear history</span></a>
+              </div>
+            </div>
+            <!-- //search_history-->
+
+            <!-- suggestions -->
+            <div class="suggestions">
+              <!-- tit_area -->
+              <div class="tit_area">
+                <strong class="tit">Suggestions(Product)</strong>
+              </div>
+
+              <!-- keyword_area -->
+              <div class="keyword_area">
+                <a href="#n">Gold</a>
+                <a href="#n">accessories</a>
+                <a href="#n">gift</a>
+                <a href="#n">health</a>
+                <a href="#n">Hair</a>
+                <a href="#n">water</a>
+                <a href="#n">design</a>
+                <a href="#n">led</a>
+              </div>
+            </div>
+            <!-- //suggestions -->
+
+            <!-- suggestions_history -->
+            <div class="suggestions_history">
+              <!-- tit_area -->
+              <div class="tit_area">
+                <strong class="tit">Suggestions(Suppliers)</strong>
+              </div>
+
+              <!-- history_list -->
+              <ul class="history_list">
+                <li>
+                  <div class="inner">
+                    <a href="#n">sleepmate</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="inner">
+                    <a href="#n">HELIOS</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="inner">
+                    <a href="#n">Marine Bioprocess</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //suggestions_history-->
+          </div>
+          <!-- //search_default / 검색어 입력하면 none -->
+
+          <!-- result_keyword / 검색어 입력하면 block -->
+          <div class="result_keyword" style="display: none;">
+            <!-- history_list -->
+            <ul class="history_list">
+              <li><div class="inner"><a href="#expn"><span class="highlight">mask</span> pack</a></div></li>
+              <li><div class="inner"><a href="#expn">Mediheal <span class="highlight">mask</span> pack</a></div></li>
+              <li><div class="inner"><a href="#expn"><span class="highlight">mask</span> pack Korea</a></div></li>
+              <li><div class="inner"><a href="#expn"><span class="highlight">mask</span> pack</a></div></li>
+              <li><div class="inner"><a href="#expn">Mediheal <span class="highlight">mask</span> pack</a></div></li>
+            </ul>
+
+            <!-- tit_area -->
+            <div class="tit_area">
+              <strong class="tit">Recommended Category</strong>
+            </div>
+
+            <!-- recom_category -->
+            <ul class="recom_category">
+              <li><a href="#expn">Building Material &amp; Construction</a></li>
+              <li><a href="#expn">Building Material &amp; Construction</a></li>
+              <li><a href="#expn">Building Material &amp; Construction</a></li>
+              <li><a href="#expn">Building Material &amp; Construction</a></li>
+            </ul>
+            <!-- //recom_category -->
+          </div>
+          <!-- //result_keyword / 검색어 입력하면 block -->
+        </div>
+        <!-- //search_real_cont -->
+      </div>
+      <!-- //search_real_layer -->
+    </div>
+    <!-- //all_categories - layer -->
+
     <!-- container -->
     <div id="container_new" class="container_new">
       <!-- main_visual -->
@@ -2106,6 +2271,8 @@
           <p class="copyright">Copyright © Korea SMEs and Startups Agency All Rights Reserved.</p>
         </div>
       </div>
+
+      <button type="button" class="page_back"><span><em class="blind">back</em></span></button>
     </footer><!-- //footer -->
 
     <!-- wing_side --><!-- 20231123 추가  -->
@@ -2155,8 +2322,6 @@
         </ul>
       </div>
       <!-- //push_wrap -->
-      
-
       <!-- top -->
       <button type="button" class="top"><span>TOP</span></button>
     </div>
@@ -2222,12 +2387,14 @@
       /* 관심 카테고리 선택 팝업 */
       $(".btn-choice").click(function(){
         let me = $(this);
+        $(this).parent().addClass("open");
         $(this).toggleClass('on');
         $(".choice-layer").toggle();
         
         $(".btn-choice-close").click(function(){
           $(".choice-layer").hide();
           me.removeClass("on").focus();
+          me.parent().removeClass("open");
         });
       });
 
@@ -2240,6 +2407,14 @@
           $(".tab-cont").removeClass("on").focus();
           $(".tab-cont").eq(index).addClass("on");
         });
+      });
+
+      $(".btn-mo-srh").click(function() {
+        $("#search_real").show();
+          return false;
+      });
+      $("#search_real div.search_real_layer div.search_real_header a.pop_close").bind('click',function(){
+        $("#search_real").hide();
       });
     });
 

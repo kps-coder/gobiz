@@ -275,6 +275,13 @@
   .sec_catagory .showcase .prod-box-sm .prod_title > em.tit {margin-bottom:8px}
   .sec_catagory .showcase .prod-list .quick_view {display: none;}
   .sec_catagory .showcase .btn-more {position: static; margin-top:19px;}
+
+  .choice-wrap.open {position: fixed; top:0; right:0; bottom:0; left:0; z-index: 10001; display: block; overflow: auto; background-color: #fff;}
+  .choice-wrap.open .btn-choice.on {position: sticky; top:0; z-index: 10; display: block; width:100%; height:40px; border:0; border-radius: 0; color:#fff; pointer-events: none; background: #4A36B3 none;}
+  .choice-wrap.open .choice-layer {position: static; max-width:100%; box-shadow: none;}
+  .choice-wrap.open .choice-layer .area-btns {margin-top:20px;}
+  .choice-wrap.open .choice-layer .btn-select-sort {display: block; width:100%;}
+  .choice-wrap.open .choice-layer .btn-choice-close {position: fixed; width:40px; height:40px; z-index: 11;}
 }
 
 /* video ---------------------------*/

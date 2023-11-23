@@ -237,7 +237,7 @@
   [class^="sec_prod"] {padding:40px 24px;}
 
   .btn-more {position: static; margin-top:19px;}
-  .btn-more {display: block; height:36px; padding:0; line-height: 36px; border:1px solid #dce1e6; border-radius: 18px; text-align: center; background: #fff none;}
+  .btn-more {display: block; height:36px; padding:0; line-height: 36px; border:1px solid #dce1e6; border-radius: 18px; text-align: center; background: none;}
   .btn-more::after {content: ' '; display: inline-block; width:20px; height:20px; vertical-align: middle; background: url(../../images/2023/icon_arr_line.svg) no-repeat right 0 center / 100% 100%;}
 }
 

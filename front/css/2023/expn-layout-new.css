@@ -122,7 +122,8 @@
   .gnb-wrap .cate_menu4 {display: none; position: absolute; top:0; bottom:0; left:50%; width:50%; border-left:12px solid #f1f1f1; overflow-y:scroll;}
   .gnb-wrap li {background-color: #fff;}
 
-  .gnb-wrap li.active > .menu-btns a {color:#fff; background-color: #6045e6;}
+  .gnb-wrap li.active > .menu-btns a,
+  .gnb-wrap li > .menu-btns a:hover {color:#fff; background-color: #6045e6;}
   .gnb-wrap > li.active .cate_menu3 {display: block;}
   /* .gnb-wrap .cate_menu3 > li.active .cate_menu4 {display: block;} */
 
@@ -218,13 +219,14 @@
   .util_menu > ul > li > a {color: #f1f0fa;}
   .util_menu > ul > li + li::before {background-color: #6045e6;}
   .util_menu.master li:last-child {display: none;}
+
+  .wing_side {position: fixed !important; top:auto !important; bottom:10px;}
 }
 
 /* 모바일 */
 @media screen and (max-width: 500px) {
   .btn-util-myp + .drop_open {left:10px; top:60px; transform: none;}
   .btn-util-lang + .drop_open {top:60px; transform: none; right:0; left:auto;} 
-  .wing_side {position: fixed !important; top:auto !important; bottom:10px;}
   .wing_side .cart,
   .wing_side .wishlist {display: none;}
   .wing_side .push_wrap ul li .push_tip {position: static; width:100%; height:auto;}

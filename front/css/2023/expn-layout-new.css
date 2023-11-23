@@ -191,6 +191,7 @@
 }
 
 .container_new {min-height:400px;}
+.wing_side {position: fixed !important; top:auto !important; bottom:10px;}
 
 /* pc  */
 @media screen and (max-width: 1300px) {
@@ -219,8 +220,6 @@
   .util_menu > ul > li > a {color: #f1f0fa;}
   .util_menu > ul > li + li::before {background-color: #6045e6;}
   .util_menu.master li:last-child {display: none;}
-
-  .wing_side {position: fixed !important; top:auto !important; bottom:10px;}
 }
 
 /* 모바일 */

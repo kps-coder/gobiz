@@ -95,7 +95,7 @@
 .prod-box-new {display:block;}
 .prod-box-new .prod_img {flex:0 0 auto; aspect-ratio: 1 / 1; box-sizing: border-box;} 
 .prod-box-new .prod_img img {aspect-ratio: 1 / 1;}
-.prod-box-new .prod_title {width: 100%; padding:16px 0;}
+.prod-box-new .prod_title {width: 100%; padding:16px 0 0;}
 .prod-box-new .prod_title > em {height:60px; -webkit-line-clamp: 3; color: #6f757a;}
 .prod-box-new .prod_title > em.tit {color: #3f4447;}
 .prod-box-new + .quick_view {right:16px; top:16px;}
@@ -317,7 +317,7 @@
 .world_visual {display: none; margin-bottom:20px;}
 .img-world {display:block; max-width:872px; margin:0 auto;}
 .sec_prod_world .showcase {padding:0 24px}
-.sec_prod_world .showcase .prod-list {display: grid; gap:20px; grid-template-columns: 33.33% 33.33% 33.33%;}
+.sec_prod_world .showcase .prod-list {display: grid; gap:5%; grid-template-columns: 30% 30% 30%;}
 .sec_prod_world .showcase .prod-box-sm {align-items: center;}
 .sec_prod_world .showcase .prod-box-sm .prod_img {overflow: hidden; width:180px; border-radius: 100%;}
 .sec_prod_world .showcase .prod-box-sm + .quick_view {left:65px;}
@@ -327,7 +327,7 @@
 }
 
 @media screen and (min-width:600px) and (max-width:1279px) {
-  .sec_prod_world .showcase .prod-list {grid-template-columns: 50% 50%;}
+  .sec_prod_world .showcase .prod-list {grid-template-columns: 48% 48%;}
   .sec_prod_world .showcase .prod-box-sm .prod_title {margin-top:24px;}
   .sec_prod_world .showcase .prod-box-sm .prod_img {width:150px;}
   .sec_prod_world .showcase .prod-box-sm + .quick_view {left:50px;}
@@ -338,7 +338,8 @@
   .tab-list > li:first-child {padding-left:24px;}
   .tab-list > li:last-child {padding-right:24px;}
 
-  .sec_prod_world .showcase .prod-list {grid-template-columns: 100%;}
+  .sec_prod_world .showcase .prod-list {display:block;}
+  .sec_prod_world .showcase .prod-list li + li {margin-top:20px;}
   .sec_prod_world .showcase .prod-box-sm .prod_img {flex:0 0 auto; width:82px;}
   .sec_prod_world .showcase .prod-box-sm .prod_title > em:not(.tit) {height:40px; -webkit-line-clamp: 2;}
   .sec_prod_world .showcase .prod-box-sm .prod_title > em.tit {margin-bottom:8px}
@@ -347,6 +348,31 @@
 /* new products --------------------------------------*/
 .sec_prod_new {background-color: #F0F2F5;}
 .sec_prod_new .inner {max-width: var(--max-width); margin:0 auto;}
-.sec_prod_new .showcase {position: relative; margin-top:20px;}
+.sec_prod_new .showcase {position: relative; margin-top:44px;}
 .sec_prod_new .showcase .prod-list {gap:20px;}
-.sec_prod_new .showcase .prod-list > li {flex:1;}
+.sec_prod_new .showcase .prod-list > li {flex:1; overflow-x:hidden}
+
+@media screen and (max-width:800px) {
+  .sec_prod_new .showcase .prod-list {display:grid; gap:5%; grid-template-columns: 30% 30% 30%}
+}
+
+@media screen and (max-width:500px) {
+  .sec_prod_new .showcase .prod-list {display:grid; gap:4%; grid-template-columns: 48% 48%}
+}
+
+/* bottom-banner -----------------------------------------*/
+
+.bottm-banner {background: #39298A url(../../images/2023/brn_online.png) no-repeat center / auto 100%;}
+.bottm-banner .onlinebanner_wrap {display: flex; align-items: center; height:200px; max-width: var(--max-width); margin:0 auto;}
+.bottm-banner .onlinebanner_wrap .brn_logo {width:200px}
+.bottm-banner .onlinebanner_wrap > a {display: block; width:100%; text-align: center;}
+.bottm-banner .onlinebanner_wrap > a .tit {display: block; margin-top:var(--gap-small);  font-size:30px; line-height: 1; color:#fff}
+.bottm-banner .onlinebanner_wrap > a .txt {display: block; margin-top:var(--gap-small); font-size:18px; color:#fff}
+
+@media screen and (max-width:500px) {
+  .bottm-banner .onlinebanner_wrap {height:100px;}
+  .bottm-banner .onlinebanner_wrap .brn_logo {width:67px}
+  .bottm-banner .onlinebanner_wrap > a .tit {font-size:22px;}
+  .bottm-banner .onlinebanner_wrap > a .txt {font-size:14px;}
+}
+

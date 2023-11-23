@@ -1,17 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
   <defs>
     <style>
       .cls-1 {
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .cls-2 {
         fill: #fff;
       }
     </style>
   </defs>
-  <g id="그룹_383539" data-name="그룹 383539" transform="translate(-329.334 -181.334)">
-    <g id="그룹_383873" data-name="그룹 383873">
-      <path id="타원_14" data-name="타원 14" class="cls-1" d="M10,4a6,6,0,1,0,6,6,6.007,6.007,0,0,0-6-6m0-4A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(329.334 181.334)"/>
-      <path id="타원_15" data-name="타원 15" class="cls-1" d="M10,4a6,6,0,1,0,6,6,6.007,6.007,0,0,0-6-6m0-4A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(352.334 181.334)"/>
-      <path id="타원_16" data-name="타원 16" class="cls-1" d="M10,4a6,6,0,1,0,6,6,6.007,6.007,0,0,0-6-6m0-4A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(352.334 204.334)"/>
-      <path id="타원_17" data-name="타원 17" class="cls-1" d="M10,4a6,6,0,1,0,6,6,6.007,6.007,0,0,0-6-6m0-4A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(329.334 204.334)"/>
+  <g id="icon_mo_cate" transform="translate(-616 -124)">
+    <rect id="사각형_280998" data-name="사각형 280998" class="cls-1" width="56" height="56" transform="translate(616 124)"/>
+    <g id="그룹_384411" data-name="그룹 384411" transform="translate(1 1)">
+      <rect id="사각형_280999" data-name="사각형 280999" class="cls-2" width="40" height="4" transform="translate(623 132)"/>
+      <rect id="사각형_281000" data-name="사각형 281000" class="cls-2" width="40" height="4" transform="translate(623 166)"/>
+      <rect id="사각형_281001" data-name="사각형 281001" class="cls-2" width="40" height="4" transform="translate(623 149)"/>
     </g>
   </g>
 </svg>

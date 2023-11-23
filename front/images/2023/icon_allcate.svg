@@ -10,13 +10,8 @@
       }
     </style>
   </defs>
-  <g id="그룹_383540" data-name="그룹 383540" transform="translate(-320 -172)">
+  <g id="icon_allcate" transform="translate(-320 -172)">
     <rect id="사각형_280693" data-name="사각형 280693" class="cls-1" width="40" height="40" rx="20" transform="translate(320 172)"/>
-    <g id="그룹_383539" data-name="그룹 383539">
-      <path id="타원_14" data-name="타원 14" class="cls-2" d="M5,2.1A2.9,2.9,0,1,0,7.9,5,2.9,2.9,0,0,0,5,2.1M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(329 181)"/>
-      <path id="타원_15" data-name="타원 15" class="cls-2" d="M5,2.1A2.9,2.9,0,1,0,7.9,5,2.9,2.9,0,0,0,5,2.1M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(341 181)"/>
-      <path id="타원_16" data-name="타원 16" class="cls-2" d="M5,2.1A2.9,2.9,0,1,0,7.9,5,2.9,2.9,0,0,0,5,2.1M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(341 193)"/>
-      <path id="타원_17" data-name="타원 17" class="cls-2" d="M5,2.1A2.9,2.9,0,1,0,7.9,5,2.9,2.9,0,0,0,5,2.1M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(329 193)"/>
-    </g>
+    <path id="menu-line" class="cls-2" d="M3,4H23V6.25H3Zm0,7.875H23v2.25H3ZM3,19.75H23V22H3Z" transform="translate(327 179)"/>
   </g>
 </svg>

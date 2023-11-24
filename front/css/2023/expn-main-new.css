@@ -52,6 +52,7 @@
 [class^="prod-box"] .prod_title {display: block; overflow: hidden;}
 [class^="prod-box"] .prod_title > em {display:block; overflow: hidden; width:100%; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 14px; font-style: normal; line-height: 20px; font-size: 14px; font-style: normal; line-height: 20px; text-overflow: ellipsis;}
 [class^="prod-box"] .prod_title > em.tit {height:20px; margin-bottom:12px; white-space: nowrap;}
+[class^="prod-box"] .prod_title > .prod-price {display:block; margin-top:8px; font-size: 14px;}
 
 .quick_view {display: none; position: absolute; }
 .quick_view > a {display: flex; align-items: center; width:50px; height:50px; border-radius: 100%; text-align: center; line-height: 1.2; background-color:#4a36b3;color:#fff;}

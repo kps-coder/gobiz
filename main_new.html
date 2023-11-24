@@ -2427,15 +2427,26 @@
       /* 관심 카테고리 선택 팝업 */
       $(".btn-choice").click(function(){
         let me = $(this);
+        let winWidth = $( window ).outerWidth();
+        if(winWidth <= 600){
+          $("body").css("overflow","hidden");
+          alert("dd");
+        }
+        console.log($( window ).outerWidth());
         $(this).parent().addClass("open");
         $(this).toggleClass('on');
-        $(".choice-layer").toggle();
+        $(".choice-layer").toggle();        
         
         $(".btn-choice-close").click(function(){
           $(".choice-layer").hide();
           me.removeClass("on").focus();
           me.parent().removeClass("open");
+          if(winWidth >= 600){
+            $("body").css("overflow","");
+          }
         });
+
+       
       });
 
       //tab cont open

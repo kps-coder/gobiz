@@ -147,6 +147,7 @@
 }
 
 @media screen and (max-width: 999px) { 
+  .header_new {position: sticky; top:0; z-index:999;}
   /* GNB mobile*/
   .cate_open {position: fixed; z-index:99999; top:0; bottom:0; right:0; left:0; width:100%; background-color: #fff;}
   .cate_open .header_util_new .inner {justify-content: flex-start;}

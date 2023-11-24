@@ -125,7 +125,7 @@
   .gnb-wrap { overflow-y:auto; width:33.33%; height:443px;}
   .gnb-wrap a {display: block; overflow: hidden; height:60px; line-height: 60px; padding:0 20px; border-bottom:1px solid #eff0f1; color: #3f4447; font-size: 15px; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
 
-  .gnb-wrap .cate_menu3 {display: none; position: absolute; top:0; bottom:0; left:33.333%; width:33.333%; background-color: #fff;}
+  .gnb-wrap .cate_menu3 {display: none; overflow-y: auto; position: absolute; top:0; bottom:0; left:33.333%; width:33.333%; background-color: #fff;}
   .gnb-wrap .cate_menu3 > li {width:100%;}
   .gnb-wrap .cate_menu3 > li .btn-menu-open {display:none}
   .gnb-wrap .cate_menu4 {display: none; position: absolute; top:0; bottom:0; left:50%; width:50%; border-left:12px solid #f1f1f1; overflow-y:scroll;}
@@ -322,7 +322,7 @@
   .foot_util_new .menu_list {line-height:30px;}
   .foot_util_new .menu_list a {display: block; color:#fff; text-align: center; font-size: 16px; font-weight: 300;}
   .foot_util_new .menu_list li:nth-child(3),
-  .foot_util_new .menu_list li:nth-child(5) {display: none;}
+  .foot_util_new .menu_list li:nth-child(6) {display: none;}
   
   .foot_cont_new {padding:0 24px 32px;}
   .foot_cont_new .notitxt {margin-top:20px;}

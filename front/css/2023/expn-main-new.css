@@ -223,6 +223,7 @@
 .sec_mainProd .title-area {margin-bottom:0;}
 .sec_mainProd .prod-list {flex-wrap: wrap; gap:20px; justify-content: space-between;}
 .sec_mainProd .prod-list > li {width:calc(50% - 10px);}
+.sec_mainProd .prod-list > li .btns-area {display: none;}
 
 .main-product-area,
 .main-service-area {background-repeat: no-repeat; background-size: auto 300px;}
@@ -241,6 +242,8 @@
 
   .sec_mainProd .prod-box .prod_title {position: static; padding:11px 0; background-color: transparent;}
   .sec_mainProd .prod-box .prod_title > em {color: #6f757a;}
+
+  .sec_mainProd .prod-list > li .btns-area {display: block; margin-top:0;}
 }
 
 [class^="sec_prod"] {padding:80px 24px;}

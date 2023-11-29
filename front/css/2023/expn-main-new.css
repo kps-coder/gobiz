@@ -93,7 +93,7 @@
 .prod-box-sm .prod_title > em {height:60px; -webkit-line-clamp: 3; color: #6f757a;}
 .prod-box-sm .prod_title > em.tit {color: #3f4447;}
 .prod-box-sm + .quick_view {top:50%; transform: translateY(-50%); left:40px;}    
-.prod-list > li:hover .prod-box-sm .prod_img {border: 2px solid #4a36b3; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);} 
+.prod-list > li:hover .prod-box-sm .prod_img {border: 2px solid #4a36b3; /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16); */} 
 
 
 /* 상품 박스 - video */

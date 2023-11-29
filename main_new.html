@@ -2733,23 +2733,7 @@
       }
 
       //20231130 select sort 클릭시 닫기 추가
-      $('#categorySort').click(function(){		
-        $(".lCtgry").css("display","none");  
-
-        var categoryStr = "";
-        
-        $("input:checkbox[name='ch01']").each(function(i) {
-          if($(this).is(":checked") === true) {
-            var showcat = $(this).closest('li').attr('data-tab');
-              
-            if(showcat == 'all') $(".lCtgry").css("display","block");
-            else $("#"+showcat).css("display","block");
-            
-            categoryStr += ',' +$(this).closest('li').attr('data-tab') ;
-          }
-        });        
-        gfn_setCookie('l_ctgry_select', categoryStr,10000 );    
-        
+      $('#categorySort').click(function(){		   
         closeChoicePop(); //20231130 닫기 function 연결
       });
 

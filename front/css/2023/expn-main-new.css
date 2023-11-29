@@ -34,7 +34,7 @@
 /* 체크박스 */
 .inp-check {position: relative; display: inline-block; vertical-align: middle;}
 .inp-check input[type="checkbox"] {position: absolute; left:0; opacity: 0; margin:0; }
-.inp-check label {display: flex; color: #6f757a; }
+.inp-check label {display: flex; color: #6f757a; font-size:var(--text-normal );}
 .inp-check label::before {content: ""; flex:0 0 auto; display:inline-block; width:20px; height:20px; margin-right:8px; vertical-align: middle; background: url('../../images/2023/inp_check.svg') no-repeat left top / 20px 40px;}
 .inp-check input[type="checkbox"]:focus + label::before {outline: auto;}
 .inp-check input[type="checkbox"]:checked + label::before {background-position: left bottom;}
@@ -172,13 +172,13 @@
 .sec_aiRecommends .inner {max-width: var(--max-width); margin:0 auto; padding:0 24px;}
 .sec_aiRecommends h2 {text-align: left; color:#fff;}
 .sec_aiRecommends .sub_tit {margin-bottom:16px; font-size:16px; color:#0ad4d4; text-align: center; }
-.title-ai {position: relative; overflow: hidden; flex:1; width:100%; max-width:412px; min-width: 184px;}
+.title-ai {position: relative; overflow: hidden; flex:1; width:100%; min-width: 184px;}
 .ai-visual {position: relative; width: 100%; height:100%;  box-sizing: border-box;}
 .ai-visual .tit {position: relative; z-index: 10; padding-top:78px; color:#fff; font-size: var(--text-large); font-weight: 300; line-height: 1.3; text-align: center;}
 .ai-visual .tit .icon_logo {width:80%; max-width:204px; aspect-ratio: 204 / 42; margin-bottom:20px;}
 
 .showcase_ai .prod-list {display: grid; grid-template-columns: 1fr 1fr 1fr; gap:8px;}
-.showcase_ai .prod-box {width:100%; max-width:260px;}
+.showcase_ai .prod-box {width:100%; max-width:300px;}
 
 .banner_wrap {padding:60px 0;}
 .banner_wrap > .inner {display: flex; gap:20px; justify-content: space-between; max-width: var(--max-width); margin:0 auto;  padding:0 24px;}
@@ -188,7 +188,7 @@
 @media screen and (min-width:801px) {
   .ai-block {display: flex; gap:20px; flex-direction: row-reverse; justify-content: space-between; padding:16px; border: 10px solid rgba(0,0,0,0.3); background: url(../../images/2023/bg_ai_pc.png) no-repeat right bottom / 58.59% auto ;}
   .title-ai .img {display: none;}
-  .showcase_ai {width:65%; max-width: 796px;}
+  .showcase_ai {width:65%; max-width: 916px;}
 }
 
 /* 모바일 */
@@ -209,13 +209,16 @@
 
 @media screen and (max-width:600px) {
   .showcase_ai .prod-list::-webkit-scrollbar {display: none;}
+  .showcase_ai .prod-box {width:141px;}
+  .showcase_ai .prod-box > .prod_title {position: static; padding:12px 0; background-color: transparent;}
+
   .banner_wrap {padding:10px 0; background-color: #fff;}
   .banner_wrap > .inner {flex-direction: column; gap:10px; padding:0;}
 } 
 
 /* 전시관 --------------------- */
 .sec_mainProd {padding:120px 0 80px; background:linear-gradient(#221957 0 41.8%, #F0F2F5 41.8% 100%);}
-.sec_mainProd .inner {display: flex; gap:40px; max-width: var(--max-width); margin:0 auto; padding:0 24px;}
+.sec_mainProd .inner {display: flex; gap:40px; max-width: 1280px; margin:0 auto; padding:0 24px;}
 .sec_mainProd .inner > * {flex:1;}
 .sec_mainProd .prod_head {height:300px; margin-bottom:-117px; padding:36px 40px 0; box-sizing: border-box; background-repeat: no-repeat; background-size: auto 300px;}
 .sec_mainProd .prod_head h2 {color:#fff;}
@@ -268,10 +271,10 @@
 .choice-wrap {position: relative; display: flex; justify-content: center; margin-bottom:42px;}
 .btn-choice {display: inline-block; height:37px; padding:0 40px 0 16px; border: 1px solid #dce1e6; border-radius: 18.5px; text-align: left; color: #5a5f63; cursor: pointer; background: #fff url('../../images/2023/icon_search_combo.svg') no-repeat right 16px center / 16px 16px;}
 .btn-choice.on {background-image: url('../../images/2023/icon_combo_close.svg');}
-.choice-layer {display:none; position: absolute; top:50px; z-index:10; width:100%; max-width:400px; padding:24px; box-sizing: border-box; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); background-color: #fff;}
+.choice-layer {display:none; position: absolute; top:50px; z-index:10; width:100%; max-width:600px; padding:24px; box-sizing: border-box; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); background-color: #fff;}
 .choice-layer .area-btns {text-align: center;}
 .choice-layer .btn-select-sort {display:inline-block; height:37px; padding:0 16px; border: 1px solid #dce1e6; border-radius: 18.5px; color: #888e94; cursor: pointer; background-color: #fff;}
-.choice-layer > ul > li + li {margin-top:8px;}
+.choice-layer > ul > li + li {margin-top:12px;}
 .choice-layer .btn-choice-close {position: absolute; right:0; top:0; display: inline-block; width:28px; height:28px; border: 0; cursor: pointer; background: url(../../images/2023/icon_close.svg) no-repeat center / 16px 16px;}
 
 .sec_catagory {padding:26px 0;}
@@ -309,7 +312,7 @@
 
 /* video ---------------------------*/
 .sec_prod_video {padding-left:0; padding-right: 0; background-color: var(--main-color);}
-.sec_prod_video .inner {max-width: var(--max-width); margin:0 auto;}
+.sec_prod_video .inner {max-width: 1280px; margin:0 auto;}
 .sec_prod_video .title-area h2 {padding:0 24px; color:#fff;}
 
 .sec_prod_video .showcase {padding:0 24px; overflow-x:auto;}

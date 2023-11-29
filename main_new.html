@@ -995,7 +995,7 @@
         <!-- search_real_cont -->
         <div class="search_real_cont">
           <!-- search_default / 검색어 입력하면 none -->
-          <div class="search_default" style="display:block;">
+          <div class="search_default" style="display:none;">
             <!-- search_history -->
             <div class="search_history">
               <!-- tit_area -->
@@ -1298,7 +1298,7 @@
                     <div class="quick_view">
                       <a href="#quick" class="pop"><span>Quick View</span></a>
                     </div>
-                    <div class="btns-area"><!-- 20231127 장바구니, 위시 버튼 추가 -->
+                    <div class="btns-area"><!-- 20231127 장바구니, 위시 버튼 추가 --><!-- 활성화 시 active 클래스 추가 -->
                       <button type="button" class="btn-wish"><span class="blind">Wish List</span></button>
                       <button type="button" class="btn-cart"><span class="blind">Add to Cart</span></button>
                     </div>
@@ -2480,6 +2480,7 @@
 
     </div><!-- //container -->
 
+
     <div class="footer-wrap style-new">
       <div class="footer_top">
         <div class="slick-control">
@@ -2644,7 +2645,7 @@
               $("#header_new .category_list").stop().slideDown(400, 'easeInOutCubic').addClass("for-pc");
               $(".back").slideDown(400);
               $(this).addClass("active");
-              $(".gnb-wrap li:first-child").addClass("active");
+              $(".gnb-wrap > li:first-child").addClass("active"); // 20231130 수정
           } else {
               open_yn = false;
               $("#header_new .category_list").stop().slideUp(400, 'easeInOutCubic');
@@ -2652,8 +2653,15 @@
               $("#header_new .allcate button").removeClass("active");
           }
           let gnbList = $(".gnb-wrap");
-          let btnMenu2 = gnbList.find("> li .menu-btns .btn-menu-open");
-          btnMenu2.click(function(){
+          let btnMenu2 = gnbList.find("> li .menu-btns .btn-menu2"); // 20231130 수정
+          let btnCateOpen = gnbList.find("> li .menu-btns .btn-menu-open"); // 20231130 추가
+          btnMenu2.on("mouseover", function(){ // 20231130 마우스 오버로 변경
+            $(this).parent().parent().addClass("active");
+            $(this).parent().parent().siblings().removeClass("active");
+          });
+
+          //20231130 추가
+          btnCateOpen.on("mouseover click", function(){ 
             $(this).parent().parent().addClass("active");
             $(this).parent().parent().siblings().removeClass("active");
           });
@@ -2662,7 +2670,7 @@
           open_yn = false;
           $("#header_new .category_list").stop().slideUp(400, 'easeInOutCubic').removeClass("for-pc");
           $(".gnb-wrap li").removeClass("active");
-      $(".back").slideUp(0);
+          $(".back").slideUp(0);
           $("#header_new .allcate button").removeClass("active");
       });
 
@@ -2698,20 +2706,51 @@
           $("body").css("overflow","hidden");
         }
         console.log($( window ).outerWidth());
-        $(this).parent().toggleClass("open");
+        $(this).parents(".choice-wrap").toggleClass("open");
         $(this).toggleClass('on');
         $(".choice-layer").toggle();        
         
-        $(".btn-choice-close").click(function(){
-          $(".choice-layer").hide();
-          me.removeClass("on").focus();
-          me.parent().removeClass("open");
-          if(winWidth <= 600){
-            $("body").css("overflow","");
-          }
+        $(".btn-choice-close").click(function(e){
+          closeChoicePop(); //20231130 function으로 변경
         });
+      });
 
-       
+      //20231130 choice all click시 전체 선택 및 취소
+      $("#ch01_all").click(function(){
+        if($(this).is(":checked") === true){
+          $("input[name=ch01]").prop("checked", true);
+        } else {
+          $("input[name=ch01]").prop("checked", false);
+        }
+      });
+
+      //20231130 관심 카테고리 선택 팝업 닫기 function으로 변경
+      function closeChoicePop() {
+        $(".choice-layer").hide();
+        $(".btn-choice").removeClass("on").focus();
+        $(".choice-wrap").removeClass("open");
+        $("body").css("overflow","");
+      }
+
+      //20231130 select sort 클릭시 닫기 추가
+      $('#categorySort').click(function(){		
+        $(".lCtgry").css("display","none");  
+
+        var categoryStr = "";
+        
+        $("input:checkbox[name='ch01']").each(function(i) {
+          if($(this).is(":checked") === true) {
+            var showcat = $(this).closest('li').attr('data-tab');
+              
+            if(showcat == 'all') $(".lCtgry").css("display","block");
+            else $("#"+showcat).css("display","block");
+            
+            categoryStr += ',' +$(this).closest('li').attr('data-tab') ;
+          }
+        });        
+        gfn_setCookie('l_ctgry_select', categoryStr,10000 );    
+        
+        closeChoicePop(); //20231130 닫기 function 연결
       });
 
       //tab cont open

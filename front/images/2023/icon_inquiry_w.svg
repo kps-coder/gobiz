@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="80" viewBox="0 0 40 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #4a36b3;
+      }
+    </style>
+  </defs>
+  <g id="그룹_384440" data-name="그룹 384440" transform="translate(-784 -1988)">
+    <g id="Inquiry40" transform="translate(784 2028)">
+      <rect id="사각형_281014" data-name="사각형 281014" class="cls-1" width="40" height="40"/>
+      <g id="그룹_384437" data-name="그룹 384437" transform="translate(-321 -2379)">
+        <path id="exchange-dollar-line" class="cls-2" d="M11.3,21.6h9.778a.9.9,0,0,0,0-1.8H13.966a4.5,4.5,0,0,1,0-9h1.778V9H19.3v1.8h4.444v3.6H13.966a.9.9,0,0,0,0,1.8h7.111a4.5,4.5,0,0,1,0,9H19.3V27H15.744V25.2H11.3Z" transform="translate(323.479 2380.997)"/>
+        <path id="chat-3-line" class="cls-2" d="M11.524,35.884,2,38l2.116-9.524a17.99,17.99,0,1,1,7.408,7.408Zm.521-3.8,1.176.629a14.39,14.39,0,1,0-5.931-5.931l.629,1.176-1.179,5.3Z" transform="translate(321 2379)"/>
+      </g>
+    </g>
+    <g id="Inquiry40-2" data-name="Inquiry40" transform="translate(784 1988)">
+      <rect id="사각형_281014-2" data-name="사각형 281014" class="cls-1" width="40" height="40"/>
+      <g id="그룹_384437-2" data-name="그룹 384437" transform="translate(-321 -2379)">
+        <path id="exchange-dollar-line-2" data-name="exchange-dollar-line" class="cls-3" d="M11.3,21.6h9.778a.9.9,0,0,0,0-1.8H13.966a4.5,4.5,0,0,1,0-9h1.778V9H19.3v1.8h4.444v3.6H13.966a.9.9,0,0,0,0,1.8h7.111a4.5,4.5,0,0,1,0,9H19.3V27H15.744V25.2H11.3Z" transform="translate(323.479 2380.997)"/>
+        <path id="chat-3-line-2" data-name="chat-3-line" class="cls-3" d="M11.524,35.884,2,38l2.116-9.524a17.99,17.99,0,1,1,7.408,7.408Zm.521-3.8,1.176.629a14.39,14.39,0,1,0-5.931-5.931l.629,1.176-1.179,5.3Z" transform="translate(321 2379)"/>
+      </g>
+    </g>
+  </g>
+</svg>

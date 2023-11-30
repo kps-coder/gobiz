@@ -265,11 +265,11 @@
 
 /* 모바일 */
 @media screen and (max-width: 800px) {
-  .footer-wrap.style-new .footer_top .slick-control > button {width:20px; height:20px;}
+  .footer-wrap.style-new .footer_top .slick-control > button {width:30px; height:30px;}
   .footer-wrap.style-new .slick-control .slick-pause,
   .footer-wrap.style-new .slick-control .slick-play {right:12px;}
   .footer-wrap.style-new .slick-control .slick-prev {left:12px;}
-  .footer-wrap.style-new .slick-control .slick-next {right:31px;}
+  .footer-wrap.style-new .slick-control .slick-next {right:42px;}
 }
 
 
